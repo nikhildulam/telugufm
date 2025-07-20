@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
         { name: "AIR Kothagudem", logo: "https://airdco.pc.cdn.bitgravity.com/images/RADIO_509111.jpg", url: "https://air.pc.cdn.bitgravity.com/air/live/pbaudio116/playlist.m3u8" },
         { name: "AIR Nizamabad", logo: "https://airdco.pc.cdn.bitgravity.com/images/RADIO_187368.jpg", url: "https://air.pc.cdn.bitgravity.com/air/live/pbaudio222/playlist.m3u8" },
         { name: "AIR Warangal", logo: "https://airdco.pc.cdn.bitgravity.com/images/airwarangal.jpg", url: "https://air.pc.cdn.bitgravity.com/air/live/pbaudio154/playlist.m3u8" },
-        { name: "Telangana FM Siddipet", logo: "https://www.telanganafm.com/img/poster_2.jpg", url: "http://198.178.123.5:12682/" },
+        { name: "Telangana FM Siddipet", logo: "https://www.telanganafm.com/img/poster_2.jpg", url: "http://198.178.123.5:12682/;?n=81b9060b2582077eb8dd" },
         { name: "London Telugu Radio", logo: "https://c14.radioboss.fm/stationlogo/33.jpg?r=49", url: "https://c8.radioboss.fm/stream/33" },
         { name: "Melody Radio Telugu", logo: "https://melodyradio.in/mel.png", url: "https://a1.asurahosting.com:9580/radio.mp3" },
         { name: "TORi Radio", logo: "https://www.teluguoneradio.com/images/tori_logo.png", url: "http://173.203.133.187:9700/" },
