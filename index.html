@@ -2,107 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>📻 Telugu & AIR Radio Stations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telugu FM Radio Player</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <style>
-        body {
-            background-color: #111;
-            color: #fff;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        h1 {
-            padding: 1rem;
-            color: #00d8ff;
-        }
-        .station {
-            display: flex;
-            align-items: center;
-            background: #222;
-            margin: 10px auto;
-            padding: 10px;
-            max-width: 600px;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-        .station:hover {
-            background: #333;
-        }
-        .station img {
-            width: 60px;
-            height: 60px;
-            border-radius: 8px;
-            object-fit: cover;
-            margin-right: 20px;
-        }
-        .station-name {
-            font-size: 18px;
-            font-weight: bold;
-            text-align: left;
-        }
-        audio {
-            width: 80%;
-            margin: 20px auto;
-        }
-    </style> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 </head>
 <body>
-    <h1>📻 Telugu & All India Radio Stations</h1>
 
-    <div id="stations"></div>
+    <div class="container">
+        <h1>Telugu FM Radio 📻</h1>
+        <div id="station-list" class="station-list">
+            </div>
+    </div>
 
-    <audio id="radioPlayer" controls autoplay>
-        Your browser does not support the audio element.
-    </audio>
+    <div id="player-bar" class="player-bar">
+        <div class="now-playing-info">
+            <img id="now-playing-logo" src="https://i.imgur.com/p1yVo2R.png" alt="Logo">
+            <div class="station-details">
+                <span id="now-playing-name">Select a Station</span>
+                <span class="live-indicator">● Live</span>
+            </div>
+        </div>
+        <div class="player-controls">
+            <audio id="audio-player" controls></audio>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
 
-    <script>
-        const stations = [
-            { name: "AIR Ananthapur", logo: "https://airdco.pc.cdn.bitgravity.com/images/airanantapur.jpg", url: "https://air.pc.cdn.bitgravity.com/air/live/pbaudio054/playlist.m3u8" },
-            { name: "AIR Kadapa", logo: "https://airdco.pc.cdn.bitgravity.com/images/aircuddapah.jpg", url: "https://air.pc.cdn.bitgravity.com/air/live/pbaudio018/playlist.m3u8" },
-            { name: "AIR Kurnool", logo: "https://airdco.pc.cdn.bitgravity.com/images/airkurnool.jpg", url: "https://air.pc.cdn.bitgravity.com/air/live/pbaudio052/playlist.m3u8" },
-            { name: "AIR Markapur", logo: "https://airdco.pc.cdn.bitgravity.com/images/RADIO_789049.jpg", url: "https://air.pc.cdn.bitgravity.com/air/live/pbaudio039/playlist.m3u8" },
-            { name: "FM Simahapuri Nellore", logo: "https://airdco.pc.cdn.bitgravity.com/images/RADIO_436373.jpg", url: "https://air.pc.cdn.bitgravity.com/air/live/pbaudio168/playlist.m3u8" },
-            { name: "AIR Tirupati", logo: "https://airdco.pc.cdn.bitgravity.com/images/airtirupati.jpg", url: "https://air.pc.cdn.bitgravity.com/air/live/pbaudio144/playlist.m3u8" },
-            { name: "AIR Andhra Pradesh", logo: "https://airdco.pc.cdn.bitgravity.com/images/airvijayawada.jpg", url: "https://air.pc.cdn.bitgravity.com/air/live/pbaudio175/playlist.m3u8" },
-            { name: "FM Rainbow Vijayawada", logo: "https://airdco.pc.cdn.bitgravity.com/images/fmrainvijayawada.jpg", url: "https://air.pc.cdn.bitgravity.com/air/live/pbaudio174/playlist.m3u8" },
-            { name: "Vividh Bharati Vijayawada", logo: "https://airdco.pc.cdn.bitgravity.com/images/RADIO_792040.jpg", url: "https://air.pc.cdn.bitgravity.com/air/live/pbaudio176/playlist.m3u8" },
-            { name: "AIR Visakhapatnam", logo: "https://airdco.pc.cdn.bitgravity.com/images/airvisakhapc.jpg", url: "https://air.pc.cdn.bitgravity.com/air/live/pbaudio080/playlist.m3u8" },
-            { name: "FM Rainbow Visakhapatnam", logo: "https://airdco.pc.cdn.bitgravity.com/images/airvisakhafm.jpg", url: "https://air.pc.cdn.bitgravity.com/air/live/pbaudio081/playlist.m3u8" },
-            { name: "AIR Adilabad", logo: "https://airdco.pc.cdn.bitgravity.com/images/adilabad.jpg", url: "https://air.pc.cdn.bitgravity.com/air/live/pbaudio218/playlist.m3u8" },
-            { name: "AIR Telangana", logo: "https://airdco.pc.cdn.bitgravity.com/images/RADIO_705851.jpg", url: "https://air.pc.cdn.bitgravity.com/air/live/pbaudio032/playlist.m3u8" },
-            { name: "FM Rainbow Hyderabad", logo: "https://airdco.pc.cdn.bitgravity.com/images/RADIO_212042.jpg", url: "https://air.pc.cdn.bitgravity.com/air/live/pbaudio031/playlist.m3u8" },
-            { name: "Vividh Bharati Hyderabad", logo: "https://airdco.pc.cdn.bitgravity.com/images/RADIO_444750.jpg", url: "https://air.pc.cdn.bitgravity.com/air/live/pbaudio034/playlist.m3u8" },
-            { name: "AIR Kothagudem", logo: "https://airdco.pc.cdn.bitgravity.com/images/RADIO_509111.jpg", url: "https://air.pc.cdn.bitgravity.com/air/live/pbaudio116/playlist.m3u8" },
-            { name: "AIR Nizamabad", logo: "https://airdco.pc.cdn.bitgravity.com/images/RADIO_187368.jpg", url: "https://air.pc.cdn.bitgravity.com/air/live/pbaudio222/playlist.m3u8" },
-            { name: "AIR Warangal", logo: "https://airdco.pc.cdn.bitgravity.com/images/airwarangal.jpg", url: "https://air.pc.cdn.bitgravity.com/air/live/pbaudio154/playlist.m3u8" },
-            { name: "Telangana FM Siddipet", logo: "https://www.telanganafm.com/img/poster_2.jpg", url: "http://198.178.123.5:12682/" },
-            { name: "London Telugu Radio", logo: "https://c14.radioboss.fm/stationlogo/33.jpg?r=49", url: "https://c8.radioboss.fm/stream/33" },
-            { name: "Melody Radio Telugu", logo: "https://melodyradio.in/mel.png", url: "https://a1.asurahosting.com:9580/radio.mp3" },
-            { name: "TORi Radio", logo: "https://www.teluguoneradio.com/images/tori_logo.png", url: "http://173.203.133.187:9700/" },
-            { name: "TORi Radio 2", logo: "https://radiostar.in/wp-content/uploads/2022/09/toriradio.jpg", url: "http://173.203.133.187:9700/" },
-            { name: "Telangana NRI Radio", logo: "https://tnriradio.org.uk/wp-content/uploads/2020/05/tnri-radio-header-logo-image-with-icons.png", url: "https://play.radioking.io/telangananriradio" },
-            { name: "Hello Telugu", logo: "https://image.radioking.io/radios/503281/logo/9cc6bee9-bde6-43f6-8d9b-f2138d54a740.png", url: "https://listen.radioking.com/radio/503281/stream/560701" }
-        ];
-
-        const container = document.getElementById("stations");
-        const player = document.getElementById("radioPlayer");
-
-        stations.forEach(station => {
-            const div = document.createElement("div");
-            div.className = "station";
-            div.innerHTML = `
-                <img src="${station.logo}" alt="${station.name}">
-                <div class="station-name">${station.name}</div>
-            `;
-            div.addEventListener("click", () => {
-                player.src = station.url;
-                player.play();
-            });
-            container.appendChild(div);
-        });
-    </script>
 </body>
 </html>
