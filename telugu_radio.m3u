@@ -1,0 +1,76 @@
+#EXTM3U
+
+#EXTINF:-1 tvg-id="Akashvani Ananthapur" tvg-name="AIR Ananthapur" tvg-radio="true" tvg-logo="https://airdco.pc.cdn.bitgravity.com/images/airanantapur.jpg" group-title="Radio",AIR Ananthapur
+https://air.pc.cdn.bitgravity.com/air/live/pbaudio054/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Akashvani Kadapa" tvg-name="AIR Kadapa" tvg-radio="true" tvg-logo="https://airdco.pc.cdn.bitgravity.com/images/aircuddapah.jpg" group-title="Radio",AIR Kadapa
+https://air.pc.cdn.bitgravity.com/air/live/pbaudio018/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Akashvani Kurnool" tvg-name="AIR Kurnool" tvg-radio="true" tvg-logo="https://airdco.pc.cdn.bitgravity.com/images/airkurnool.jpg" group-title="Radio",AIR Kurnool
+https://air.pc.cdn.bitgravity.com/air/live/pbaudio052/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Akashvani Markapur" tvg-name="AIR Markapur" tvg-radio="true" tvg-logo="https://airdco.pc.cdn.bitgravity.com/images/RADIO_789049.jpg" group-title="Radio",AIR Markapur
+https://air.pc.cdn.bitgravity.com/air/live/pbaudio039/playlist.m3u8
+
+#EXTINF:-1 tvg-id="FM Simahapuri Nellore" tvg-name="FM Simahapuri Nellore" tvg-radio="true" tvg-logo="https://airdco.pc.cdn.bitgravity.com/images/RADIO_436373.jpg" group-title="Radio",FM Simahapuri Nellore
+https://air.pc.cdn.bitgravity.com/air/live/pbaudio168/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Akashvani Tirupati" tvg-name="AIR Tirupati" tvg-radio="true" tvg-logo="https://airdco.pc.cdn.bitgravity.com/images/airtirupati.jpg" group-title="Radio",AIR Tirupati
+https://air.pc.cdn.bitgravity.com/air/live/pbaudio144/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Akashvani Andhra Pradesh" tvg-name="AIR Andhra Pradesh" tvg-radio="true" tvg-logo="https://airdco.pc.cdn.bitgravity.com/images/airvijayawada.jpg" group-title="Radio",AIR Andhra Pradesh
+https://air.pc.cdn.bitgravity.com/air/live/pbaudio175/playlist.m3u8
+
+#EXTINF:-1 tvg-id="FM Rainbow Vijayawada" tvg-name="FM Rainbow Vijayawada" tvg-radio="true" tvg-logo="https://airdco.pc.cdn.bitgravity.com/images/fmrainvijayawada.jpg" group-title="Radio",FM Rainbow Vijayawada
+https://air.pc.cdn.bitgravity.com/air/live/pbaudio174/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Vividh Bharati Vijayawada" tvg-name="Vividh Bharati Vijayawada" tvg-radio="true" tvg-logo="https://airdco.pc.cdn.bitgravity.com/images/RADIO_792040.jpg" group-title="Radio",Vividh Bharati Vijayawada
+https://air.pc.cdn.bitgravity.com/air/live/pbaudio176/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Akashvani Visakhapatnam" tvg-name="AIR Visakhapatnam" tvg-radio="true" tvg-logo="https://airdco.pc.cdn.bitgravity.com/images/airvisakhapc.jpg" group-title="Radio",AIR Visakhapatnam
+https://air.pc.cdn.bitgravity.com/air/live/pbaudio080/playlist.m3u8
+
+#EXTINF:-1 tvg-id="FM Rainbow Visakhapatnam" tvg-name="FM Rainbow Visakhapatnam" tvg-radio="true" tvg-logo="https://airdco.pc.cdn.bitgravity.com/images/airvisakhafm.jpg" group-title="Radio",FM Rainbow Visakhapatnam
+https://air.pc.cdn.bitgravity.com/air/live/pbaudio081/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Akashvani Adilabad" tvg-name="AIR Adilabad" tvg-radio="true" tvg-logo="https://airdco.pc.cdn.bitgravity.com/images/adilabad.jpg" group-title="Radio",AIR Adilabad
+https://air.pc.cdn.bitgravity.com/air/live/pbaudio218/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Akashvani Telangana" tvg-name="AIR Telangana" tvg-radio="true" tvg-logo="https://airdco.pc.cdn.bitgravity.com/images/RADIO_705851.jpg" group-title="Radio",AIR Telangana
+https://air.pc.cdn.bitgravity.com/air/live/pbaudio032/playlist.m3u8
+
+#EXTINF:-1 tvg-id="FM Rainbow Hyderabad" tvg-name="FM Rainbow Hyderabad" tvg-radio="true" tvg-logo="https://airdco.pc.cdn.bitgravity.com/images/RADIO_212042.jpg" group-title="Radio",FM Rainbow Hyderabad
+https://air.pc.cdn.bitgravity.com/air/live/pbaudio031/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Vividh Bharati Hyderabad" tvg-name="Vividh Bharati Hyderabad" tvg-radio="true" tvg-logo="https://airdco.pc.cdn.bitgravity.com/images/RADIO_444750.jpg" group-title="Radio",Vividh Bharati Hyderabad
+https://air.pc.cdn.bitgravity.com/air/live/pbaudio034/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Akashvani Kothagudem" tvg-name="AIR Kothagudem" tvg-radio="true" tvg-logo="https://airdco.pc.cdn.bitgravity.com/images/RADIO_509111.jpg" group-title="Radio",AIR Kothagudem
+https://air.pc.cdn.bitgravity.com/air/live/pbaudio116/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Akashvani Nizamabad" tvg-name="AIR Nizamabad" tvg-radio="true" tvg-logo="https://airdco.pc.cdn.bitgravity.com/images/RADIO_187368.jpg" group-title="Radio",AIR Nizamabad
+https://air.pc.cdn.bitgravity.com/air/live/pbaudio222/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Akashvani Warangal" tvg-name="AIR Warangal" tvg-radio="true" tvg-logo="https://airdco.pc.cdn.bitgravity.com/images/airwarangal.jpg" group-title="Radio",AIR Warangal
+https://air.pc.cdn.bitgravity.com/air/live/pbaudio154/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Telangana FM Siddipet" tvg-name="Telangana FM Siddipet" tvg-radio="true" tvg-logo="https://www.telanganafm.com/img/poster_2.jpg" group-title="Radio",Telangana FM Siddipet
+http://198.178.123.5:12682/
+
+#EXTINF:-1 tvg-id="London Telugu Radio" tvg-name="London Telugu Radio" tvg-radio="true" tvg-logo="https://c14.radioboss.fm/stationlogo/33.jpg?r=49" group-title="Radio",London Telugu Radio
+https://c8.radioboss.fm/stream/33
+
+#EXTINF:-1 tvg-id="Melody Radio Telugu" tvg-name="Melody Radio Telugu" tvg-radio="true" tvg-logo="https://melodyradio.in/mel.png" group-title="Radio",Melody Radio Telugu
+https://a1.asurahosting.com:9580/radio.mp3
+
+#EXTINF:-1 tvg-id="TORi Radio" tvg-name="TORi Radio" tvg-radio="true" tvg-logo="https://www.teluguoneradio.com/images/tori_logo.png" group-title="Radio",TORi Radio
+http://173.203.133.187:9700/
+
+#EXTINF:-1 tvg-id="TORi Radio" tvg-name="TORi Radio 2" tvg-radio="true" tvg-logo="https://radiostar.in/wp-content/uploads/2022/09/toriradio.jpg" group-title="Radio",TORi Radio
+http://173.203.133.187:9700/stream/1
+
+#EXTINF:-1 tvg-id="Telangana NRI Radio" tvg-name="Telangana NRI Radio" tvg-radio="true" tvg-logo="https://tnriradio.org.uk/wp-content/uploads/2020/05/tnri-radio-header-logo-image-with-icons.png" group-title="Radio",Telangana NRI Radio
+https://play.radioking.io/telangananriradio
+
+#EXTINF:-1 tvg-id="Hello Telugu" tvg-name="Hello Telugu" tvg-radio="true" tvg-logo="https://image.radioking.io/radios/503281/logo/9cc6bee9-bde6-43f6-8d9b-f2138d54a740.png" group-title="Radio",Hello Telugu
+https://listen.radioking.com/radio/503281/stream/560701
